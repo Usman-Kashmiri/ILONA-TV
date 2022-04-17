@@ -406,6 +406,18 @@ section {
   .bottom-text h2 {
     font-size: 1.6rem;
   }
+  .social-media-links {
+    row-gap: 15px;
+  }
+  .social-media-links .social-links-icons a {
+    font-size: 1rem;
+    margin-right: 5px;
+    width: 32px;
+    height: 32px;
+  }
+  .social-media-links .social-links a {
+    font-size: 2.4rem !important;
+  }
   /* .bio-section .bio-text span {
     font-size: 1.9rem;
     margin-top: 0;
