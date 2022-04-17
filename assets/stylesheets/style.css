@@ -127,7 +127,7 @@ section {
 .top-text h3 {
   text-transform: uppercase;
   position: relative;
-  top: 130px;
+  /* top: 120px; */
   font-size: 1.9rem;
 }
 
@@ -135,7 +135,11 @@ section {
   height: fit-content;
 }
 
-.ilon-tv {
+.middle-text img {
+  width: 600px;
+}
+
+.ilona-tv {
   width: fit-content;
   display: flex;
   flex-direction: column;
@@ -166,6 +170,8 @@ section {
 }
 
 .bio-section {
+  padding: 50px 0 0;
+  background-color: #111;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -178,12 +184,12 @@ section {
   -webkit-filter: grayscale(1);
 }
 
-.bio-section .bio-text .name {
+/* .bio-section .bio-text .name {
   display: flex;
   flex-direction: column;
-}
+} */
 
-.bio-section .bio-text span {
+/* .bio-section .bio-text span {
   margin-top: 50px;
   color: var(--red);
   font-family: "Gill Sans MT", sans-serif;
@@ -191,52 +197,52 @@ section {
   font-size: 6.2rem;
   line-height: 5.2rem;
   padding-left: 80px;
-}
+} */
 
-.bio-text .about-text {
+/* .bio-text .about-text {
   padding: 0 10px;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
+} */
+
+.bio-section .bio-text {
+  padding: 0 25px 0 0;
+  color: var(--white);
+  font-size: 1.4rem;
 }
 
-.bio-text .about-text span {
-  margin-top: 0;
-  color: white;
-  font-family: initial;
+.bio-section .bio-text span {
+  color: var(--red);
   font-weight: 800;
-  font-size: 2.2rem;
-  line-height: 2.5rem;
+  font-size: 1.45rem;
 }
 
 .bio-section .bio-img {
-  overflow: hidden;
-  padding: 20px;
+  /* overflow: hidden; */
+  /* padding: 10px; */
   width: 100%;
-  display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .bio-img img {
   position: relative;
   width: 100%;
-  border: 10px solid var(--red);
+  /* border: 10px solid var(--red);
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  -o-border-radius: 50%; */
 }
 
 .social-media-links {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
-.social-media-links .social-links {
-  padding: 0 150px;
+/* .social-media-links .social-links {
   margin-top: -30px;
-}
+} */
 
 .social-media-links .social-links a {
   color: var(--red);
@@ -252,6 +258,11 @@ section {
 
 .social-media-links .social-links a:hover {
   color: white;
+}
+
+.social-media-links .social-links-icons {
+  display: flex;
+  justify-content: center;
 }
 
 .social-media-links .social-links-icons a {
@@ -286,6 +297,8 @@ section {
   background-color: var(--red);
   padding: 20px 0;
   margin-top: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .bio-section .networks-logos img {
@@ -305,6 +318,9 @@ section {
 }
 
 .guests-section h2 {
+  border-bottom: 4px solid var(--red);
+  padding: 0 10px;
+  width: fit-content;
   font-size: 3.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 900;
@@ -342,6 +358,18 @@ section {
   margin-right: 18px;
   height: 175px;
   overflow: hidden;
+  filter: grayscale(1) contrast(1.4);
+  -webkit-filter: grayscale(1) contrast(1.4);
+  transition: ease-out 0.4s;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  -ms-transition: ease-out 0.4s;
+  -o-transition: ease-out 0.4s;
+}
+
+.guest-gallery .guests-imgs:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
 }
 
 .guest-gallery .c-gap {
@@ -351,42 +379,45 @@ section {
 /* Media Queries */
 
 @media screen and (max-width: 992px) {
-  .bio-text .about-text span {
-    font-size: 3.5rem;
-    line-height: 3.7rem;
+  .bio-section .bio-text {
+    margin-top: 50px;
+    text-align: justify;
+    padding: 0 30px;
   }
   .guest-gallery .guests-imgs {
     height: 140px;
   }
+  .guest-gallery .row-2 {
+    padding: 0 12px;
+  }
 }
 
 @media screen and (max-width: 540px) {
-  .banner-section {
-    background-position-x: -560px;
+  .middle-text img {
+    width: 100%;
   }
   .top-text h3 {
-    top: 150px;
     font-size: 1.3rem;
   }
-  .text-layer .middle-text h1 {
+  /* .text-layer .middle-text h1 {
     font-size: 4.6rem;
     line-height: 9.2rem;
-  }
+  } */
   .bottom-text h2 {
     font-size: 1.6rem;
   }
-  .bio-section .bio-text span {
+  /* .bio-section .bio-text span {
     font-size: 1.9rem;
     margin-top: 0;
     padding: 0;
-  }
-  .bio-text .about-text {
+  } */
+  /* .bio-text .about-text {
     margin-top: 10px;
-  }
-  .bio-text .about-text span {
+  } */
+  /* .bio-text .about-text span {
     font-size: 1.85rem;
     line-height: 2.3rem;
-  }
+  } */
   .social-media-links .social-links a {
     font-size: 1.5rem;
   }
@@ -396,10 +427,20 @@ section {
   .guests-section h2 {
     font-size: 3rem;
   }
+  .guest-gallery .row {
+    row-gap: 30px;
+  }
+  .guest-gallery h2 {
+    margin-top: 20px;
+    margin-bottom: 0;
+    width: 340px;
+  }
   .guest-gallery .guests-imgs {
     margin-right: 0;
+    margin-top: 0;
   }
   .guest-gallery .row-2 {
-    padding: 0 78px;
+    margin-top: 15px;
+    padding: 0 60px;
   }
 }
