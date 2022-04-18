@@ -127,11 +127,14 @@ section {
   justify-content: flex-end;
   padding: 60px;
 }
-
 .top-text h3 {
-  text-transform: uppercase;
   position: relative;
-  /* top: 120px; */
+  top: 10px;
+}
+
+.top-text h3,
+.bottom-text h3 {
+  text-transform: uppercase;
   font-size: 1.9rem;
 }
 
@@ -141,6 +144,10 @@ section {
 
 .middle-text img {
   width: 600px;
+}
+
+.bottom-text img {
+  width: 265px;
 }
 
 .ilona-tv {
@@ -298,7 +305,7 @@ section {
 }
 
 .bio-section .networks-logos {
-  background-color: var(--red);
+  background-color: rgb(205, 4, 8);
   padding: 20px 0;
   margin-top: 30px;
   display: flex;
@@ -424,6 +431,9 @@ footer p a:hover {
 /* Media Queries */
 
 @media screen and (max-width: 992px) {
+  .bottom-text img {
+    width: 225px;
+  }
   .bio-section .bio-text {
     margin-top: 50px;
     padding: 0 30px;
@@ -440,7 +450,8 @@ footer p a:hover {
   .middle-text img {
     width: 100%;
   }
-  .top-text h3 {
+  .top-text h3,
+  .bottom-text h3 {
     font-size: 1.3rem;
   }
   /* .text-layer .middle-text h1 {
@@ -449,6 +460,9 @@ footer p a:hover {
   } */
   .bottom-text h2 {
     font-size: 1.6rem;
+  }
+  .bottom-text img {
+    width: 125px;
   }
   .social-media-links {
     row-gap: 15px;
@@ -482,7 +496,10 @@ footer p a:hover {
   }
   .videos-section h2,
   .guests-section h2 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
+  }
+  .guests-section h2 {
+    padding: 5px 0;
   }
   .guest-gallery .row {
     row-gap: 30px;
