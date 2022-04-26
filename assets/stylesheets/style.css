@@ -76,6 +76,20 @@ section {
   height: 1.2em;
 }
 
+.channels {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+
+.channels .red-text {
+  color: var(--red);
+}
+
+.channels .white-text {
+  color: white;
+}
+
 .jarallax {
   overflow-x: hidden;
 }
@@ -125,17 +139,43 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 60px;
+  padding: 60px 60px 20px;
 }
+
+.bottom-text h2,
+.bottom-text h3,
+.bottom-text a {
+  display: inline;
+  width: fit-content;
+}
+
 .top-text h3 {
   position: relative;
-  top: 10px;
+  top: 15px;
 }
 
 .top-text h3,
 .bottom-text h3 {
-  text-transform: uppercase;
-  font-size: 1.9rem;
+  font-size: 1.65rem;
+}
+
+.bottom-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5;
+}
+
+.bottom-text a {
+  color: white;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+}
+
+.bottom-text a:hover {
+  color: var(--red);
 }
 
 .middle-text {
@@ -143,11 +183,11 @@ section {
 }
 
 .middle-text img {
-  width: 600px;
+  width: 500px;
 }
 
 .bottom-text img {
-  width: 265px;
+  width: 250px;
 }
 
 .ilona-tv {
@@ -157,7 +197,7 @@ section {
   align-items: center;
 }
 
-.text-layer .middle-text h1 {
+/* .text-layer .middle-text h1 {
   font-size: 8.6rem;
   text-transform: uppercase;
   text-shadow: 8px 7px black;
@@ -174,10 +214,10 @@ section {
 .text-layer .middle-text .ilona {
   font-family: var(--subway-black);
   color: var(--red);
-}
+} */
 
 .bottom-text h2 {
-  font-size: 3.15rem;
+  font-size: 2.5rem;
 }
 
 .bio-section {
@@ -446,7 +486,11 @@ footer p a:hover {
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 600px) {
+  .banner-section .text-layer {
+    padding: 40px 40px 20px;
+  }
+  
   .middle-text img {
     width: 100%;
   }
